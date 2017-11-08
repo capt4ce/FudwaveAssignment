@@ -4,9 +4,9 @@
   "description": "An Assignment for fundwave placement",
   "main": "index.js",
   "scripts": {
-    "test": "babel-node test.js",
+    "test": "node test.js",
     "dev": "./node_modules/.bin/webpack-dev-server --content-base . --hot",
-    "start": "babel-node index.js",
+    "start": "node index.js",
     "build": "webpack -p --config webpack.config.js"
   },
   "engines": {
