@@ -1,4 +1,4 @@
-# FudwaveAssignment
+# FundwaveAssignment
 This repo is created enable Fundwave to asses my code for the assignment they gave.
 
 
