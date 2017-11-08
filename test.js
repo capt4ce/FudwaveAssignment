@@ -1,4 +1,6 @@
-import Fundwave from './Fundwave'
+// import Fundwave from './Fundwave'
+require('babel-register');
+var Fundwave = require('./Fundwave');
 
 const readline = require('readline');
 

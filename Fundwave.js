@@ -43,9 +43,6 @@ module.exports = class Fundwave {
     }
 
     static getTimePeriods(fromDate, toDate, timePeriod) {
-        console.log(fromDate)
-        console.log(toDate)
-        console.log(timePeriod)
         // declaring costants for TIME PERIOD
         const TimePeriod = {
             MONTH: 1,
