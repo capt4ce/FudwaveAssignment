@@ -6,12 +6,11 @@ import path from 'path'
 import Fundwave from './Fundwave'
 
 var app = express()
+app.use('/dist', express.static(path.join(__dirname, 'dist')))
 var server = require('http').createServer(app)
 app.use(logger('dev'))                                       // log every request to the console
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))          // get information from html forms
-
-app.use('/public', express.static(path.join(__dirname, './dist')))
 
 // allowing CORS
 app.use(function (req, res, next) {
@@ -46,7 +45,7 @@ app.get('/getTimePeriods', function (req, res) {
     })
 })
 
-app.get('*', function (req, res) { res.sendFile('index.html') })
+app.get('*', function (req, res) { res.sendFile('index.html', { root: '.' }) })
 
 
 // starting the server

@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const server = 'http://localhost:3000/'
+// const server = 'http://localhost:3000/'
+const server = 'https://fundwave-assignment.herokuapp.com/'
 
 export const getQuarterNames = (fromDate, toDate) => {
     return new Promise((resolve, reject) => {
